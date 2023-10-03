@@ -1,0 +1,13 @@
+{
+  "settings":{
+    "title": "Fire Star",
+    "theme": "system",
+    "geometry": {"width":1024, "height":640},
+    "resizable": {"width":true, "height":true},
+    "language": "Eng"
+  },
+  "supports": {
+    "languages": ["Eng", "Rus"]
+    "themes": ["system","light","dark"]
+  }
+}

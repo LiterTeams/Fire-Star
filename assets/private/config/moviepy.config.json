@@ -1,0 +1,92 @@
+{
+  "experimental": {
+    "threads": true
+  },
+  "settings": {
+    "codec": "libx264",
+    "preset": "medium",
+    "video_size": "auto",
+    "audio": true,
+    "use_experimental": false,
+    "auto_fps_adjustment": true,
+    "fps": 30
+  },
+  "supports": {
+    "video_formats": [
+      "mp4",
+      "avi",
+      "gif"
+    ],
+    "video_decoders": [
+      "av1",
+      "rawvideo",
+      "libdav1d",
+      "libdavs2",
+      "libuavs3d",
+      "QSV Decoders",
+      "v210"
+    ],
+    "video_encoders": [
+      "a64_multi",
+      "a64_multi5",
+      "gif",
+      "hap",
+      "jpeg2000",
+      "libravle",
+      "libaom-av1",
+      "libsvtav1",
+      "libjxl",
+      "libkvazaar",
+      "libopenh264",
+      "libtheora",
+      "libvpx",
+      "libwebp",
+      "libx264",
+      "libx264rgb",
+      "libx265",
+      "libxavs2",
+      "libxvid"
+    ],
+    "audio_decoders": [
+      "ac3",
+      "flac",
+      "ffwavesynth",
+      "ibcelt",
+      "libgsm",
+      "libilbc",
+      "libopencore-amrnb",
+      "libopencore-amrwb",
+      "libopus"
+    ],
+    "audio_encoders": [
+      "acc",
+      "ac3",
+      "ac3_fixed",
+      "flac",
+      "opus",
+      "libfdk_aac",
+      "libmp3lame",
+      "libopencore-amrnb",
+      "libopus",
+      "libshine",
+      "libtwolame",
+      "libvo-amrwbenc",
+      "libvorbis",
+      "mjpeg",
+      "wavpack"
+    ],
+    "presets": [
+      "veryfast",
+      "faster",
+      "fast",
+      "medium",
+      "slow",
+      "slower",
+      "veryslow"]
+  },
+  "paths": {
+    "video_path_get": "assets\\public\\videos\\default",
+    "video_path_put": "assets\\public\\videos\\moviepy"
+  },
+  "version": "Beta 1.0"
+}
