@@ -1,6 +1,10 @@
 venv
 .idea
+examples
+src
 __pycache__
 .mp4
 .jpg
 .png
+.toml
+.github

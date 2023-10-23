@@ -1,0 +1,17 @@
+{
+  "menu": {
+    "settings": ["Work In Progress"],
+    "services": ["MoviePy", "Pillow", "Parser", "Waifu2x", "LiteCore", "Data Base"],
+    "assets": ["Images", "Videos"],
+    "language": ["Eng", "Rus"],
+    "theme": ["Light", "Dark", "System"]
+  },
+  "icons": {
+    "app_logo": "FireStarIcon.png"
+  },
+  "paths": {
+    "general": "assets",
+    "icons": "private\\icons"
+  },
+  "version": "Beta 1.0"
+}

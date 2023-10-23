@@ -1,4 +1,4 @@
 {
-  "configs_name": ["moviepy.config","parser.config","tkinter.config"],
+  "configs_name": ["moviepy.config","parser.config","tkinter.config", "pystray.config"],
   "version": "Beta 1.0"
 }

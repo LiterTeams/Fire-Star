@@ -7,7 +7,7 @@
     "language": "Eng"
   },
   "supports": {
-    "languages": ["Eng", "Rus"]
+    "languages": ["Eng", "Rus"],
     "themes": ["system","light","dark"]
   }
 }

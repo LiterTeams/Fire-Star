@@ -1,10 +1,10 @@
-import tkinter
+from tkinter import CENTER
 from customtkinter import CTkButton
 
 
 class Button(CTkButton):
-    def __init__(self,width:int, height:int, text:str, x_pos:int, y_pos:int, anchor=None):
+    def __init__(self,width:int, height:int, text:str, x_pos:float | int = 0.5, y_pos:float | int = 0.5, anchor=None):
         super().__init__(self)
         self.button = CTkButton(self, width=width, height=height, text=text).place(
-            relx=x_pos, rely=y_pos, anchor=tkinter.CENTER
+            relx=x_pos, rely=y_pos, anchor=CENTER
         )

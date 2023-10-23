@@ -1,3 +1,4 @@
+from os import listdir
 import moviepy.editor as moviepy
 from colorama import init, Fore
 from ..errors.Errors import NotFoundError, DuplicateError
@@ -15,16 +16,17 @@ class MoviePython:
         self.__supports:dict | None = None
         self.__paths:dict | None = None
         self.__files:list = []
-        self.version:str | None = None
-        self._status = False
+        self.__version:str = ""
+        self.__status = False
 
     def __config_init(self, config):
         try:
+            print(reduce(lambda acc,res: dict(acc, **res),[{key:alias(value)} for key,value in config["paths"].items()]))
             self.__settings = config["settings"]
             self.__supports = config["supports"]
             self.__paths = reduce(lambda acc,res: dict(acc, **res),[{key:alias(value)} for key,value in config["paths"].items()])
-            self.version = config["version"]
-            self._status = True
+            self.__version = config["version"]
+            self.__status = True
         except KeyError as error:
             print(error)
 
@@ -57,12 +59,28 @@ class MoviePython:
             print(Fore.RED+"Files Not Found!")
         self.__files.clear()
 
+    def auto_search(self):
+        print(self.__paths)
+        #files = list(filter(lambda elem: elem.endswith(".mp4"),listdir(f"{self.__paths.get("video_path_get")}")))
+        #print(files)
+        # if files:
+        #     for file in files:
+        #         file_name = file.split(".")[0]
+        #         print(file_name)
+
+
     # getters | setters
 
     def set_settings(self, setting_name:str, setting_value:str) -> None:
         if setting_name not in self.__settings:
             raise NotFoundError(value=setting_name, function_name="MoviePython - set_settings")
         self.__settings[setting_name] = setting_value
+
+    @property
+    def status(self) -> bool: return self.__status
+
+    @property
+    def version(self) -> str: return self.__version
 
     @property
     def supports(self) -> dict: return self.__supports
